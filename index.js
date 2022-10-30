@@ -13,6 +13,10 @@ try {
   console.log(path);
   var files = fs.readdirSync(path);
   console.log(files);
+  fs.readFile(path + files[0], 'utf8', (err, data) => {
+    if (err) throw err;
+    console.log(data);
+  });
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
 } catch (error) {
