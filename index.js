@@ -1,6 +1,7 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
 var fs = require('fs');
+var zipper = require('zip-local');
 
 try {
   // `who-to-greet` input defined in action metadata file
@@ -11,6 +12,8 @@ try {
   // console.log(`The event payload: ${payload}`);
   let path = core.getInput('path');
   console.log(path);
+  zipper.sync.zip(path).compress().save("pack.zip");
+  
   var files = fs.readdirSync(path);
   console.log(files);
   fs.readFile(path + "/" + files[4], 'utf8', (err, data) => {
