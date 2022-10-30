@@ -11,7 +11,7 @@ try {
   // const payload = JSON.stringify(github.context.payload, undefined, 2)
   // console.log(`The event payload: ${payload}`);
   const zippedFolder = core.getInput('zipped-folder');
-  console.log(`Zipped folder: ${zippedFolder}`);
+  console.log(`Zipped repo folder: ${zippedFolder}`);
 } catch (error) {
   core.setFailed(error.message);
 }
