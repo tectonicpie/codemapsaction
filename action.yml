@@ -7,6 +7,8 @@ inputs:
   #   default: 'World'
   zipped-folder: 
     description: 'zipped repo'
+    required: true
+    default: 'none'
 outputs:
   time: # id of output
     description: 'The time we greeted you'
