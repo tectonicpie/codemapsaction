@@ -5,10 +5,10 @@ inputs:
   #   description: 'Who to greet'
   #   required: true
   #   default: 'World'
-  zipped-folder: 
-    description: 'zipped repo'
+  path: 
+    description: 'path to workspace repo'
     required: true
-    default: 'none'
+    default: ''
 outputs:
   time: # id of output
     description: 'The time we greeted you'
