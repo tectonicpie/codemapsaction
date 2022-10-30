@@ -22,6 +22,7 @@
     "@actions/github": "^5.1.1",
     "@zip.js/zip.js": "^2.6.51",
     "fs": "^0.0.1-security",
-    "jszip": "^3.10.1"
+    "jszip": "^3.10.1",
+    "zip-local": "^0.3.5"
   }
 }
